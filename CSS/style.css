@@ -9,6 +9,7 @@ body{
     background-attachment: fixed, scroll;  
     background-position: center center;  
 }
+
 /*inicio del container*/
 .container {
     max-width: 970px;
@@ -35,10 +36,11 @@ body{
     filter: invert(98%) sepia(75%) saturate(34%) hue-rotate(262deg) brightness(113%) contrast(100%);
 }
 /*fin del container*/
-/*two_columbs*/
+
+/*inicio de two_columbs*/
 .two_columbs{
     display: grid;
-    grid-template-columns: repeat(2, 65% 35%);
+    grid-template-columns: 630.5px 339.5px;
     margin-top: 60px;
 }
 .catalogo_animes{
@@ -91,4 +93,59 @@ body{
 .catalogo1 .catalogo_name:hover{
     background-color: #e9e7e7;
     text-decoration: underline;
+}
+/*fin de two_columbs*/
+
+/*Inicio 2 columna rating - mangas populares*/
+.animes_rating{
+    margin-inline: 20px;
+}
+.titulo_mangas_populares{
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    text-align:start;
+    background-color: #19628B;
+}
+.contenido_populares{
+    border: 1px solid #19628B;
+}
+.contenido_populares a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #27A2EE;
+}
+.contenido_populares a:hover{
+    text-decoration: underline;
+}
+.contenido_populares img{
+    width: 70px;
+    margin: 15px 0px 10px 20px;
+}
+.contenido_populares img:hover{
+    opacity: 0.9;
+}
+.contenido_populares{
+    display: grid;
+    grid-template-columns: 104px 193px;
+
+}
+.informacion_popular{
+    padding-top: 18px;
+}
+.informacion_popular p{
+    padding-top: 7px;
+    font-size: 15px;
+}
+.popular, .informacion_popular{
+    border-bottom: 1px solid #DDDDDD;
+}
+/*fin 2 columna rating - mangas populares*/
+
+/*Inicio 2 columna rating - mangas mas vistos*/
+.informacion_popular img{
+    width: 20px;
+    margin: 0px;
+    padding-right: 6px;
 }
